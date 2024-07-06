@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Meal Planner</title>
+    <link rel="stylesheet" href="styles/meal planner.css">
+</head>
+<body>
+    <h1>Hemans meal planner</h1>
+    <div class="container">
+        <header>
+            <h1>Interactive Meal Planner</h1>
+            <div id="dietaryPreferences">
+                <label for="dietType">Select Dietary Preference:</label>
+                <select id="dietType">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="paleo">Paleo</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </header>
+        <main>
+            <nav id="weekNavigation">
+                <button id="prevDay">Previous</button>
+                <span id="currentDay"></span>
+                <button id="nextDay">Next</button>
+            </nav>
+            <section id="mealPlan">
+                <!-- Meals for each day will be dynamically added here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts/meal planner.js"></script>
+    <footer>
+        <h3>@2024.Hemans nutrition and wellness clinic. all rights reserved</h3>
+    </footer>
+</body>
+</html>
